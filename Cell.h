@@ -5,8 +5,6 @@
 #include "Spreadsheet.h"
 #include <vector>
 
-//https://github.com/mustiian/spreadsheet.git
-
 class CCell {
 public:
     CCell () {}
