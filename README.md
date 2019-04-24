@@ -2,6 +2,13 @@
 
 **Jednoduchý tabulkový editor**
 
-Tabulka (Spreadsheet.h) je reprezentovana jako mapa s ukazately na bunky (Cell.h).
+Bunky pro spreadsheet podporuji:
+- literaly (cisla, retezce);
+- zakladnu operatory: +, -, *, /;
+- jednoduche funkce: abs, sin, cos, ceil, floor;
+- odkaz na jinou bunku;
+- agregacní funkce pres sloupce, radky a oblasti: avg, max, min
 
-Kazda bunka ma svuj druh (cislo(Number.h), retezec(String.h), funkce(Fuction.h), ukazatel na jinou bunku(Pointer.h) nebo vyraz(Expression.h)). Kdyz pridavame do tabulky novy prikaz pro bunku, napr. prikazem v terminalu "A3 = 99 + 1", pak retezec "A3" je pozice v tabulce ( index v mape ) a "99 + 1" je prikaz bunky. Na zaklade druhu prikazu program vytvory vhodny druh bunky.
+Bunka detekuje cykly.
+
+Vytvorena tabulka muze byt ulozena do souboru a opetovne nactena.
