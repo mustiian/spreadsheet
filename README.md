@@ -12,5 +12,3 @@ Bunky pro spreadsheet podporuji:
 Bunka detekuje cykly.
 
 Vytvorena tabulka muze byt ulozena do souboru a opetovne nactena.
-
-
