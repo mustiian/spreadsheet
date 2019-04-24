@@ -1,0 +1,48 @@
+digraph "CFunction::getPositionsForFunction"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CFunction::getPositionsFor\lFunction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CSpreadsheet::getCell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCSpreadsheet.html#a681d138b2bf4fa6c8272e383bcd3a55b"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CCell::getValueNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCCell.html#a40f8e1efeacf0cce8fb5d96251ea4eed"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CPointer::CheckLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#a840d1c1bb985accb3e5d3bcc51c19aef"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CPointer::deleteMinus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#a2b01364581c782c76dae9a88a28710d0"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CExpression::getCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCExpression.html#a0af6c8b2aff6fd9967ff0105f17cb666"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CExpression::getValueNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCExpression.html#ad0afd6e7009762858f58fce0cacbece7"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CExpression::getValueString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCExpression.html#a73a60947eb6f6e861196d03af1903eae"];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CExpression::setValueFrom\lCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCExpression.html#a67bec4a6488cb06d5e370b6fa10bbb8c"];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CPointer::updateAllPointers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#ad0e5c27486980846105a07020dad2ff2"];
+  Node10 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CPointer::setValueFromCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#a14ea2281d6a386607b6a5533b01554ae"];
+  Node11 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="CCell::getError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCCell.html#a32f297678ba67eb605a88de063afc2c2"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="CFunction::calculateFunction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#a0c58f2793bfbb3ad6dc54d7c252a8bbb"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="CFunction::max",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#aa2b22178909b4e8adc72c2a1a0c8c177"];
+  Node14 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="CFunction::getValueNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#ae9f71eca5e970ff43823e6c18270e8de"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="CFunction::min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#aeb76ff5d401e7af67ffb3d7c4e8e7eb2"];
+  Node16 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="CFunction::avg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#afdf1db852fcb9053349572c2a31a9df1"];
+  Node17 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

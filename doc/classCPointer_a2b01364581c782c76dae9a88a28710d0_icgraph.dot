@@ -1,0 +1,28 @@
+digraph "CPointer::deleteMinus"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CPointer::deleteMinus",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CPointer::CheckLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#a840d1c1bb985accb3e5d3bcc51c19aef"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CFunction::getPositionsFor\lFunction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#a6221a461183979abcd9c8e64b039e7a1"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CFunction::CFunction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#a13a7dfd477b00be3499c1dd1644fc072"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CFunction::~CFunction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCFunction.html#a05548ce113bdb82439cc315c58cc93f7"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CPointer::CPointer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#a2bde64a7692e2e03e67054d51d0fc94e"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CPointer::~CPointer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#a2c78aa0ce894318ae615511b1bec8869"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CPointer::setValueFromCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#a14ea2281d6a386607b6a5533b01554ae"];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CPointer::updateAllPointers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCPointer.html#ad0e5c27486980846105a07020dad2ff2"];
+  Node9 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

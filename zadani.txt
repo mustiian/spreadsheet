@@ -1,6 +1,4 @@
-### Spreadsheet
-
-**Jednoduchý tabulkový editor**
+Jednoduchy spreadsheet
 
 Bunky pro spreadsheet podporuji:
 - literaly (cisla, retezce);
